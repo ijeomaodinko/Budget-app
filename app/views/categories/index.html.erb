@@ -1,15 +1,22 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Categories</h1>
-
-<div id="categories">
-  <% @categories.each do |category| %>
-    <%= render category %>
-    <p>
-      <%= link_to "Show this category", category %>
-    </p>
-  <% end %>
+<section>
+<div>
+<% @categories.each do |category| %>
+    <div>
+    <div>
+    <%= category.name %>
+    </div>
+      <div>
+      <%= image_tag category.icon, :alt => 'icon-logo' %>
+      </div>
+      <div>
+        <div>
+        <h1><%= link_to category.name, category_expenses_path(category) %></h1>
+        </div>
+        </div>
+        </div>
+        <% end %>
+        </div>
+<div class="my-3 float-right">
+    <%= link_to "Add Category", new_category_path, class: "btn btn-primary" %>
 </div>
-
-<%= link_to "New category", new_category_path %>
-
+</section>

@@ -1,24 +1,13 @@
 <h1>Categories</h1>
 <p>Find me in app/views/categories/new.html.erb</p>
 
-<<%= form_with model:@category, url: categories_path do |f| %>
-  <%= section class="container" %>
-    <div>
-  <div class="field">
-  <%= f.label :name %><br />
-  <%= f.name_field :fullname, autofocus: true, autocomplete: "fullname", placeholder:'Name' %>
-</div>
+<h1>New category</h1>
 
-  
-  <div class="field">
-    <%= f.label :icon %><br />
-    <%= f.email_field :icon, autofocus: true, autocomplete: "email", placeholder: "Icon url"%>
-  </div>
+<%= render "form", category: @category %>
 
-  <div class="actions">
-    <%= f.submit "Save" %>
-  </div>
+<br>
+
+<div>
+  <%= link_to "Back to recipes", recipes_path %>
 </div>
-</section>
-<% end %>
 
