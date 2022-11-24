@@ -1,31 +1,28 @@
 class ExpensesController < ApplicationController
-  
   def index
-    
+    @category = Category.find_by(id: params[:category_id])
+    @expenses = Expense.joins(:category_expenses).where(category_expenses: { category_id: params[:category_id] }).where(user_id: current_user.id).order(created_at: :desc)
+    @total = Expense.joins(:category_expenses).where(category_expenses: { category_id: params[:category_id] }).where(user_id: current_user.id).sum(:amount)
   end
 
-  def new
-    @expense << category
-  end
+  def new; end
 
   def create
-    @expense = Expense.create(category_params)
+    @expense = Expense.new(name: params[:name], amount: params[:amount], user_id: current_user.id)
 
-    respond_to do |format|
-      if @category.save
-        format.html { redirect_to categories_url, notice: 'Category was successfully created.' }
-      else
-        format.html { render :new, status: :unprocessable_entity }
+    if @expense.save!
+      params[:category_ids].each do |category_id|
+        CategoryExpense.create(category_id:, expense_id: @expense.id) if category_id != ''
       end
+      redirect_to category_expenses_path
+    else
+      render :new
     end
   end
 
-  def show
-  end
+  private
 
-  private 
-
-  def category_params
-    params.require(:expense).permit(:name, :icon, category.id[])
+  def expense_params
+    params.require(:expense).permit(:name, :amount, :category_ids)
   end
 end

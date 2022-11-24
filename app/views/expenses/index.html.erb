@@ -1,2 +1,35 @@
-<h1>Expenses#index</h1>
-<p>Find me in app/views/expenses/index.html.erb</p>
+<section class="expense_container">
+    <div class="container_div">
+      <div class="image_div">
+        <%= image_tag @category.icon, :alt => 'expense-logo', class: "img"%>
+      </div>
+      <div class="">
+        <div class="text_div">
+          <h1 class="text"> <%=@category.name%></h1>
+          <h5 class="text"> $ <%= @total%></h5>
+        </div>
+        <div  class="time_div">
+          <p>Created: <%=time_ago_in_words @category.created_at%>
+        </div>
+      </div>
+    </div>
+    <div class="info"> 
+        <% @expenses.each do |expense|%>
+          <div class="expense_info">
+            <div class="text_expense">
+              <h1> <%= expense.name%> </h1>
+              <h1>$ <%= expense.amount%> </h1>
+            </div>
+            <div class="time_info">
+            <p>Created: <%= time_ago_in_words expense.created_at%> </p>
+          </div>
+          </div>
+        <%end%> 
+        <% if @expenses.empty?%>
+          <p class="text">Expenses is empty</p>
+        <%end%>
+      </div>
+      <div class="link_info">
+    <%= link_to 'Add Expense', new_category_expense_path, class: 'link'%>
+  </div> 
+</section>

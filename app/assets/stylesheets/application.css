@@ -13,3 +13,131 @@
  *= require_tree .
  *= require_self
  */
+body {
+    background-color: rgb(193, 224, 241);
+}
+.image_div {
+    width: 40%;
+}
+
+.text {
+    font-size: large;
+}
+
+.img {
+    width: 40%;
+}
+
+.text_field {
+    width: 100%;
+    height: 4rem;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border-right: #fcfdfd;
+    border-left: #fcfdfd;
+    border-top: #a5a7a7;
+    border-bottom: #3b3d3d;
+}
+
+.btn {
+    width: 6rem;
+    height: 2.9rem;
+    background-color: rgb(95, 167, 235);
+    color:rgb(245, 247, 250);
+    border-radius: 0.4rem;
+    font-size: large;
+}
+
+.text_desc {
+    font-size: 2rem;
+    text-align: center;
+    color:rgb(245, 247, 250);
+    padding-top: 1rem;
+}
+
+.container {
+    margin: auto;
+    background-color: #eff0f0;
+    padding-bottom: 2rem;
+    width: 50%;
+    margin-top: 5rem;
+    border-radius: 1rem;
+}
+
+.desc_container {
+    background-color: #3778c2;
+    height: 5rem;
+    width: auto;
+    margin-bottom: 2rem;
+    border-radius: 0.1rem;
+}
+
+.link_div {
+    display: flex;
+    gap: 19rem;
+}
+
+.categorybtn {
+    margin-left: 2rem;
+}
+
+.link_category {
+    width: 16rem;
+    height: 2rem;
+    background-color: rgb(95, 167, 235);
+    color:rgb(245, 247, 250);
+    border-radius: 0.4rem;
+    font-size: large;
+    padding-top: 12px;
+    padding-left: 1rem;
+    margin-right: 2rem;
+}
+
+/* category */
+.categories_div {
+    margin: auto;
+    background-color: #eff0f0;
+    padding-bottom: 2rem;
+    width: 50%;
+    margin-top: 5rem;
+    border-radius: 1rem;
+}
+
+.category_info {
+    background-color: #3778c2;
+    height: 5rem;
+    width: auto;
+    margin-bottom: 2rem;
+    border-radius: 0.1rem;
+    display: flex;
+    gap: 9rem;
+}
+
+.text_descategory {
+    font-size: 2rem;
+    text-align: center;
+    color:rgb(245, 247, 250);
+    padding-left: 15rem;
+
+}
+
+.category_name {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 9rem;
+    color:rgb(245, 247, 250);
+}
+
+.link_categr {
+    width: 3.0rem;
+    height: 1.5rem;
+    background-color: rgb(195, 230, 231);
+    border-radius: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.1rem;
+    margin-top: 0.5rem;
+}
