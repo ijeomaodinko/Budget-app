@@ -298,3 +298,27 @@ body {
     color: #5fb523;
     text-align: center;
 }
+
+.image_splash {
+    margin: auto;
+    padding-left: 25rem;
+}
+
+.splashe {
+    width: 7rem;
+    height: 2.1rem;
+    border-radius: 1rem;
+    background-color: #3778c2;
+    color: white;
+    padding-left: 4.7rem;
+    padding-top: 0.6rem;
+    margin-bottom: 2rem;
+} 
+
+.link_splash {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-left: 1rem;
+    gap: 2rem;
+}
