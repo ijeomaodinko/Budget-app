@@ -26,7 +26,7 @@ After you're finished please remove all the comments and instructions!
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
-
+![](https://badgen.net/builder#badge/Ruby%20on%20Rails/7.0.4/red)  ![](https://badges.aleen42.com/src/visual_studio.svg)  ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)   ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)   ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
   <h3><b>Microverse README Template</b></h3>
 
 </div>
@@ -43,9 +43,9 @@ After you're finished please remove all the comments and instructions!
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Run tests](#run-tests)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -59,15 +59,17 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [your_project_name] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+**Budget App** is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
+- Major languages: Ruby
+- Frameworks: Ruby on Rails, Capybara
+- Library: CanCanCan
+- Technologies used: Rubocop, Gem, Postgresql
+- Code Editor: Visual Studio
+- Testing: Rspec
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -79,7 +81,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://rubyonrails.org/">RubyonRails</a></li>
   </ul>
 </details>
 
@@ -90,15 +92,12 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Authorization of users**
+- **Adding of categories and expenses**
+- **Authentication of users**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,83 +115,72 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+To get a local copy up and running follow these simple example steps.
 
-To get a local copy up and running, follow these steps.
+Open your console. Run the following 
+
+If you are using HTTPS
+
+    "git clone https://github.com/ijeomaodinko/recipe-app.git
+
+If you are using a SSH key.
+
+    "git clone https://github.com/ijeomaodinko/recipe-app.git
+
+
+Press ENTER to create your local clone. After creating it, you can open the app through the open folder in Vscode or typing   `cd blog-app`    on the terminal 
 
 ### Prerequisites
 
 In order to run this project you need:
+- A modern web browser like Chrome, Safari, Firefox, etc.
+- JavaScript enabled.
+- Ruby on rails
+- Postgres
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
+    cd my-folder
+  ``git clone https://github.com/ijeomaodinko/Budget-app.git
+  ``bundle install
 
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
 
-### Install
+### Build the Development Serve 
 
-Install this project with:
+    rails s 
 
-<!--
-Example command:
+Open it by accessing http://localhost:3000/ on your browser.
 
-```sh
-  cd my-project
-  gem install
-```
---->
+### To Run Test
+To install rspec in the terminal:
 
-### Usage
+    $ gem install rspec
 
-To run the project, execute the following command:
+To run tests, run this command
 
-<!--
-Example command:
+    $ rspec ./spec/#{filename}_spec.rb
+    
 
-```sh
-  rails server
-```
---->
+### Create, Drop and, Reset a Database
 
-### Run tests
+    rails db:create
+    rails db:drop
+    rails db:reset
 
-To run tests, run the following command:
+### Generate Schema
 
-<!--
-Example command:
+    rails db:migrate
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+### Generate Controller
 
+    rails generate controller NAME [action action] [options]
+    
 ### Deployment
 
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+You can deploy this project using: Hereku
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,19 +188,14 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Author** 🖊📖
 
-👤 **Author1**
+  **Ijeoma Odinko**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: @ijeomaodinko
+- Twitter: @Iodinko
+- LinkedIn: ijeomaodinko
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -220,11 +203,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- [ ] **Add a feature that tells when expense exceed amount possessed**
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -242,9 +222,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+Give a ⭐️ if you like this project...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -254,7 +233,10 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -264,13 +246,14 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **How to create expenses for a category**
 
-  - [Answer_1]
+  - If you are done creating category,you can move ahead and create expense through clicking on the 
+  button ``Add Expense``.
 
-- **[Question_2]**
+- **How to Sign Up**
 
-  - [Answer_2]
+  - On visiting the site, the main page has two buttons where you can login or sign up.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
