@@ -5,27 +5,24 @@
 <strong class="category_name"><%= current_user.name %></strong><div class="link_categr"><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'navbar-link'%></div>
 </div>
 </div>
-  <div class="container_div">
-    <% @categories.each do |category|%>
-      <div class="image_div">
-        <div class="image_div">
+<div class="container_div">
+<% @categories.each do |category|%>
+      <div class="image_info">
+        <div class="imag_div">
           <%= image_tag category.icon,  :alt => 'category-logo', class: "img" %>
         </div>
 
         <div class="info_container">
-          <div class="category_info">
-            <h1 class="text">
+            <h1 class="text_categories">
             <%= link_to category.name, category_expenses_path(category)%></h1>
+            <p class="text_time"> <%= time_ago_in_words category.created_at%> ago</p>
+        </div>
+            
+            <div class="time_info">
             <h3 class="textcat">$ <%= @total[category.id]%></h3>
-          </div>
-
-          <div class="time_info">
-            <p>Created: <%= time_ago_in_words category.created_at%> ago</p>
           </div>
         
         </div>
-
-      </div>
     <% end %>
   </div> 
 

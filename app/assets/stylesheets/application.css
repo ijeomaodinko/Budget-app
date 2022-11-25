@@ -14,7 +14,7 @@
  *= require_self
  */
 body {
-    background-color: rgb(193, 224, 241);
+    background-color: rgb(249, 249, 250);
 }
 .image_div {
     width: 40%;
@@ -99,8 +99,7 @@ body {
 /* category */
 .categories_div {
     margin: auto;
-    background-color: #eff0f0;
-    padding-bottom: 2rem;
+    background-color: #d3d7db;
     width: 50%;
     margin-top: 5rem;
     border-radius: 1rem;
@@ -110,7 +109,6 @@ body {
     background-color: #3778c2;
     height: 5rem;
     width: auto;
-    margin-bottom: 2rem;
     border-radius: 0.1rem;
     display: flex;
     gap: 9rem;
@@ -140,4 +138,163 @@ body {
     padding-right: 0.5rem;
     padding-top: 0.1rem;
     margin-top: 0.5rem;
+}
+
+.container_div {
+}
+
+.image_info {
+   display: flex;
+   width: 90%;
+   flex-direction: row;
+   gap: 1rem;
+   margin-bottom: 1rem;
+   background-color: white;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.imag_div {
+    margin-left: 1.5rem;
+    width: 20%;
+    padding-top: 1.5rem;
+}
+
+.img {
+    width: 90%;
+    border-radius: 1rem;
+}
+
+.info_container {
+    width: 60%;
+    align-items: center;
+}
+
+.text_categories {
+    text-decoration: none;
+}
+
+.time_info {
+  width:20%;
+  margin: auto auto;
+}
+
+.link {
+    width: 100%;
+    background-color: #5fb523;
+    height: 5rem;
+    text-align: center;
+    padding-top:1.5rem;
+}
+
+.link_path {
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+/* expense form */
+.text_expense {
+    width: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* expenses */
+.expense_container {
+    margin: auto;
+    background-color: #d3d7db;
+    width: 50%;
+    margin-top: 5rem;
+    border-radius: 1rem;
+}
+
+.ecent_desc {
+    color: rgb(201, 196, 196);
+    font-size: large;
+    text-align: right;
+}
+
+.escent {
+    background-color: #3778c2;
+    height: 1rem;
+    width: auto;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+    padding-right: 7rem;
+}
+
+.expense_div {
+    display: flex;
+   width: 90%;
+   flex-direction: row;
+   gap: 1rem;
+   margin-bottom: 1rem;
+   background-color: white;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.container_div {
+   display: flex;
+   flex-direction: row;
+   width: 50%;
+   gap: 1rem;
+}
+
+.expense_info {
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    gap: 4rem;
+    margin-top: -1rem;
+}
+
+.text_expenseinfo {
+    /* margin-top: -4rem; */
+    width: 7rem;
+}
+
+.time_expense {
+    width: 7rem; 
+}
+
+.time_infoexpense {
+    width: 7rem; 
+}
+
+.time_expens {
+    width: 7rem; 
+}
+
+.text_info {
+    text-align: right;
+    font-size: large;
+    padding-left: 23.2rem;
+}
+
+.text_h {
+    margin-left: 2rem;
+    font-size: large;
+    color:#434b54
+}
+
+.img_expens {
+    margin: 1rem;
+    width: 66%;
+    border-radius: 1rem;
+}
+
+/* splash */
+
+.image_Splash {
+    width:100%
+    margin: auto auto;
+}
+
+.text_splash {
+    font-size: xx-large;
+    color: #5fb523;
+    text-align: center;
 }
