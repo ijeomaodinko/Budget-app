@@ -1,2 +1,47 @@
-<h1>Expenses#index</h1>
-<p>Find me in app/views/expenses/index.html.erb</p>
+<section class="expense_container">
+<div class="category_info">
+<div class="desc_container"><h1 class="text_descategory">Transactions</h1></div>
+<div>
+<strong class="category_name"><%= current_user.name %></strong><div class="link_categr"><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'navbar-link'%></div>
+</div>
+</div>
+<div class="escent"><h1 class="ecent_desc">Most Recent </h1></div>
+<div><h5 class ="text_h">Gift Credit<span class="text_info"> $ <%= @total%></span></h5></div>
+<div class="expense_div">
+    <div class="container_div">
+      <div class="image_div">
+        <%= image_tag @category.icon, :alt => 'expense-logo', class: "img_expens"%>
+      </div>
+      <div class="">
+        <div class="text_div">
+          <h1 class="text"> <%=@category.name%></h1>
+        </div>
+        <div  class="time_div">
+          <p><%=time_ago_in_words @category.created_at%>
+        </div>
+      </div>
+    </div>
+    <div class="info"> 
+        <% @expenses.each do |expense|%>
+          <div class="expense_info">
+            <div class="text_expenseinfo">
+              <h1 class= "time_expense"> <%= expense.name%> </h1>
+              <p class="time_expense"><%= time_ago_in_words expense.created_at%> </p>
+              </div>
+              <div class="time_infoexpense">
+              <h1 class= "time_expens">$ <%= expense.amount%> </h1>
+          </div>
+          </div>
+        <%end%> 
+        <% if @expenses.empty?%>
+          <p class="text">Expenses is empty</p>
+        <%end%>
+      </div>
+      </div>
+      <div class="link">
+    <%= link_to 'Add Expense', new_category_expense_path, class: 'link_path'%>
+  </div> 
+  <div class ="link_category">
+      <%= link_to "Back to categories", categories_path %>
+  </div>
+</section>

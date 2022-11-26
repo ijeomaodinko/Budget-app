@@ -1,7 +1,8 @@
 class Expense < ApplicationRecord
-  belongs_to :user
-  has_and_belongs_to_many :categories
+  validates :name, presence: true, length: { maximum: 50 }
+  validates :amount, presence: true, numericality: { greater_than: 0 }
 
-  validates :name, :amount, presence: true
-  validates :category, presence: true
+  has_many :category_expenses, dependent: :destroy
+  has_many :categories, through: :category_expenses
+  belongs_to :user
 end

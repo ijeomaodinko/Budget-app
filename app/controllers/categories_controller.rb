@@ -1,9 +1,12 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: %i[show edit update destroy]
-  load_and_authorize_resource
-
   def index
-    @categories = Category.all
+    @categories = Category.where(user_id: current_user.id).order(created_at: :desc)
+    @total = {}
+    @categories.each do |category|
+      @total[category.id] = Expense.joins(:category_expenses)
+        .where(category_expenses: { category_id: category.id })
+        .where(user_id: current_user.id).sum(:amount)
+    end
   end
 
   def new
@@ -11,18 +14,14 @@ class CategoriesController < ApplicationController
   end
 
   def create
-    @category = Category.create(category_params)
-
-    respond_to do |format|
-      if @category.save
-        format.html { redirect_to categories_url, notice: 'Category was successfully created.' }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-      end
+    @category = Category.new(category_params)
+    @category.user_id = current_user.id
+    if @category.save
+      redirect_to categories_path
+    else
+      render :new
     end
   end
-
-  def show; end
 
   private
 

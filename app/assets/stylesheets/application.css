@@ -13,3 +13,305 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-color: rgb(249, 249, 250);
+}
+
+.image_div {
+  width: 40%;
+}
+
+.text {
+  font-size: large;
+}
+
+.text_field {
+  width: 100%;
+  height: 4rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border-right: #fcfdfd;
+  border-left: #fcfdfd;
+  border-top: #a5a7a7;
+  border-bottom: #3b3d3d;
+}
+
+.btn {
+  width: 6rem;
+  height: 2.9rem;
+  background-color: rgb(95, 167, 235);
+  color: rgb(245, 247, 250);
+  border-radius: 0.4rem;
+  font-size: large;
+}
+
+.text_desc {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(245, 247, 250);
+  padding-top: 1rem;
+}
+
+.container {
+  margin: auto;
+  background-color: #eff0f0;
+  padding-bottom: 2rem;
+  width: 50%;
+  margin-top: 5rem;
+  border-radius: 1rem;
+}
+
+.desc_container {
+  background-color: #3778c2;
+  height: 5rem;
+  width: auto;
+  margin-bottom: 2rem;
+  border-radius: 0.1rem;
+}
+
+.link_div {
+  display: flex;
+  gap: 19rem;
+}
+
+.categorybtn {
+  margin-left: 2rem;
+}
+
+.link_category {
+  width: 16rem;
+  height: 2rem;
+  background-color: rgb(95, 167, 235);
+  color: rgb(245, 247, 250);
+  border-radius: 0.4rem;
+  font-size: large;
+  padding-top: 12px;
+  padding-left: 1rem;
+  margin-right: 2rem;
+}
+
+/* category */
+.categories_div {
+  margin: auto;
+  background-color: #d3d7db;
+  width: 50%;
+  margin-top: 5rem;
+  border-radius: 1rem;
+}
+
+.category_info {
+  background-color: #3778c2;
+  height: 5rem;
+  width: auto;
+  border-radius: 0.1rem;
+  display: flex;
+  gap: 9rem;
+}
+
+.text_descategory {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(245, 247, 250);
+  padding-left: 15rem;
+}
+
+.category_name {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 9rem;
+  color: rgb(245, 247, 250);
+}
+
+.link_categr {
+  width: 3rem;
+  height: 1.5rem;
+  background-color: rgb(195, 230, 231);
+  border-radius: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  margin-top: 0.5rem;
+}
+
+.image_info {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imag_div {
+  margin-left: 1.5rem;
+  width: 20%;
+  padding-top: 1.5rem;
+}
+
+.img {
+  width: 66%;
+  border-radius: 1rem;
+}
+
+.info_container {
+  width: 60%;
+  align-items: center;
+}
+
+.text_categories {
+  text-decoration: none;
+}
+
+.time_info {
+  width: 20%;
+  margin: auto auto;
+}
+
+.link {
+  width: 100%;
+  background-color: #5fb523;
+  height: 5rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.link_path {
+  color: white;
+  font-size: xx-large;
+  text-decoration: none;
+}
+
+/* expense form */
+.text_expense {
+  width: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* expenses */
+.expense_container {
+  margin: auto;
+  background-color: #d3d7db;
+  width: 50%;
+  margin-top: 5rem;
+  border-radius: 1rem;
+}
+
+.ecent_desc {
+  color: rgb(201, 196, 196);
+  font-size: large;
+  text-align: right;
+}
+
+.escent {
+  background-color: #3778c2;
+  height: 1rem;
+  width: auto;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  padding-bottom: 1rem;
+  padding-right: 7rem;
+}
+
+.expense_div {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container_div {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 1rem;
+}
+
+.expense_info {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 4rem;
+  margin-top: -1rem;
+}
+
+.text_expenseinfo {
+  /* margin-top: -4rem; */
+  width: 7rem;
+}
+
+.time_expense {
+  width: 7rem;
+}
+
+.time_infoexpense {
+  width: 7rem;
+}
+
+.time_expens {
+  width: 7rem;
+}
+
+.text_info {
+  text-align: right;
+  font-size: large;
+  padding-left: 23.2rem;
+}
+
+.text_h {
+  margin-left: 2rem;
+  font-size: large;
+  color: #434b54;
+}
+
+.img_expens {
+  margin: 1rem;
+  width: 66%;
+  border-radius: 1rem;
+}
+
+/* splash */
+
+.image_Splash {
+  width: 100%;
+  margin: auto auto;
+}
+
+.text_splash {
+  font-size: xx-large;
+  color: #5fb523;
+  text-align: center;
+}
+
+.image_splash {
+  margin: auto;
+  padding-left: 25rem;
+}
+
+.splashe {
+  width: 7rem;
+  height: 2.1rem;
+  border-radius: 1rem;
+  background-color: #3778c2;
+  color: white;
+  padding-left: 4.7rem;
+  padding-top: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.link_splash {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding-left: 1rem;
+  gap: 2rem;
+}
