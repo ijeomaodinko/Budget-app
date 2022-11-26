@@ -11,7 +11,7 @@ RSpec.describe ExpensesController, type: :request do
     end
   end
 
-   describe 'GET /new' do
+  describe 'GET /new' do
     it 'returns http success' do
       get '/expenses/new'
       expect(response).to have_http_status(302)

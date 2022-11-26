@@ -99,6 +99,11 @@ After you're finished please remove all the comments and instructions!
 - **Adding of categories and expenses**
 - **Authentication of users**
 
+
+<p align="center">
+  <img src="./images/erd_diagram.png" alt="ERD diagram" />
+</p>
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -180,7 +185,7 @@ To run tests, run this command
     
 ### Deployment
 
-You can deploy this project using: Hereku
+You can deploy this project using: Heroku
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

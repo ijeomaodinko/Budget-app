@@ -25,4 +25,3 @@ RSpec.describe CategoriesController, type: :request do
     end
   end
 end
-
