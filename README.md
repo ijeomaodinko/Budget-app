@@ -26,9 +26,11 @@ After you're finished please remove all the comments and instructions!
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
-![](https://badgen.net/builder#badge/Ruby%20on%20Rails/7.0.4/red)  ![](https://badges.aleen42.com/src/visual_studio.svg)  ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)   ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white)   ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-  <h3><b>Microverse README Template</b></h3>
 
+ <img src="https://badgen.net/builder#badge/Ruby%20on%20Rails/7.0.4/red" alt="logo" width="60"  height="auto" />
+<img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="logo" width="60"  height="auto" />
+<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="logo" width="60"  height="auto" />
+<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white" alt="logo" width="60"  height="auto" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -57,7 +59,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Budget App 🌍<a name="about-project"></a>
 
 **Budget App** is about building a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
@@ -101,7 +103,7 @@ After you're finished please remove all the comments and instructions!
 
 
 <p align="center">
-  <img src="./images/erd_diagram.png" alt="ERD diagram" />
+  <img src="erd_diagram.png" alt="ERD diagram" />
 </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -126,11 +128,11 @@ Open your console. Run the following
 
 If you are using HTTPS
 
-    "git clone https://github.com/ijeomaodinko/recipe-app.git
+    "git clone https://github.com/ijeomaodinko/Budget-app.git
 
 If you are using a SSH key.
 
-    "git clone https://github.com/ijeomaodinko/recipe-app.git
+    "git clone https://github.com/ijeomaodinko/Budget-app.git
 
 
 Press ENTER to create your local clone. After creating it, you can open the app through the open folder in Vscode or typing   `cd blog-app`    on the terminal 
@@ -149,8 +151,10 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
     cd my-folder
-  ``git clone https://github.com/ijeomaodinko/Budget-app.git
-  ``bundle install
+
+    git clone https://github.com/ijeomaodinko/Budget-app.git
+
+    bundle install
 
 
 ### Build the Development Serve 
@@ -191,9 +195,8 @@ You can deploy this project using: Heroku
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+##  👤 Author <a name="authors"></a> 🖊📖
 
-👤 **Author** 🖊📖
 
   **Ijeoma Odinko**
 
