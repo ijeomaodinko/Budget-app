@@ -3,9 +3,7 @@ class ExpensesController < ApplicationController
   before_action :set_category, only: %i[index show new edit update create destroy]
   load_and_authorize_resource
 
-  def index
-    
-  end
+  def index; end
 
   def new
     @expense << category
@@ -23,10 +21,9 @@ class ExpensesController < ApplicationController
     end
   end
 
-  def show
-  end
+  def show; end
 
-  private 
+  private
 
   def category_params
     params.require(:expense).permit(:name, :icon, category.id[])
