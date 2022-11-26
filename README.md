@@ -27,10 +27,10 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
- <img src="https://badgen.net/builder#badge/Ruby%20on%20Rails/7.0.4/red" alt="logo" width="60"  height="auto" />
-<img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="logo" width="60"  height="auto" />
-<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="logo" width="60"  height="auto" />
-<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white" alt="logo" width="60"  height="auto" />
+ <img src="https://badgen.net/builder#badge/Ruby%20on%20Rails/7.0.4/red" alt="logo" width="120"  height="auto" />
+<img src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="logo" width="120"  height="auto" />
+<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="logo" width="120"  height="auto" />
+<img src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white" alt="logo" width="120"  height="auto" />
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -112,9 +112,8 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://sheltered-shore-56941.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +156,7 @@ Clone this repository to your desired folder:
     bundle install
 
 
-### Build the Development Serve 
+### Build the Development Server
 
     rails s 
 
@@ -211,7 +210,7 @@ You can deploy this project using: Heroku
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add a feature that tells when expense exceed amount possessed**
+- [ ] **Add a feature that tells when expense exceed amount possess**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
