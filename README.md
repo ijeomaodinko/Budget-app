@@ -238,8 +238,7 @@ Give a ⭐️ if you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-" The Creative Commons license of the design requires that you give appropriate credit to the author. Therefore, you must do it in the README of your project. ", please kindly give appropriate credit to Gregoire Vella on Behance the author of the original design, as required by the Creative Commons license of the design.
-
+ I appropriate credit to Gregoire Vella on Behance the author of the original design, as required by the Creative Commons license of the design
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
