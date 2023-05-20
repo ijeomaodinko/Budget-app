@@ -14,7 +14,7 @@
  *= require_self
  */
 body {
-  background-color:rgba(7,182,232,.07);
+  background-color:rgb(7 182 232 / 7%);
 }
 
 .image_div {
@@ -42,8 +42,8 @@ body {
 .btn {
   width: 6rem;
   height: 2.9rem;
-  background-color: rgb(95, 167, 235);
-  color: rgb(245, 247, 250);
+  background-color: rgb(95 167 235);
+  color: rgb(245 247 250);
   border-radius: 0.4rem;
   font-size: large;
 }
@@ -51,7 +51,7 @@ body {
 .text_desc {
   font-size: 2rem;
   text-align: center;
-  color: rgb(245, 247, 250);
+  color: rgb(245 247 250);
   padding-top: 1rem;
 }
 
@@ -84,7 +84,7 @@ body {
 .link_category {
   width: 16rem;
   height: 2rem;
-  background-color: rgb(95, 167, 235);
+  background-color: rgb(95 167 235);
   border-radius: 0.4rem;
   font-size: large;
   padding-top: 12px;
@@ -113,7 +113,7 @@ body {
 .text_descategory {
   font-size: 2rem;
   text-align: center;
-  color: rgb(245, 247, 250);
+  color: rgb(245 247 250);
   padding-left: 15rem;
 }
 
@@ -121,14 +121,14 @@ body {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 9rem;
-  color: rgb(245, 247, 250);
+  color: rgb(245 247 250);
   padding-right: 0.5rem;
 }
 
 .link_categr {
   width: 3rem;
   height: 1.5rem;
-  background-color: rgb(195, 230, 231);
+  background-color: rgb(195 230 231);
   border-radius: 1rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -169,7 +169,7 @@ body {
 
 .time_info {
   width: 20%;
-  margin: auto auto;
+  margin: auto;
 }
 
 .link {
@@ -203,7 +203,7 @@ body {
 }
 
 .ecent_desc {
-  color: rgb(201, 196, 196);
+  color: rgb(201 196 196);
   font-size: large;
   text-align: right;
 }
@@ -285,6 +285,7 @@ body {
   color: #5fb523;
   text-align: center;
 }
+
 .splash_wrapper {
   display: block;
   align-items: center;
@@ -293,6 +294,7 @@ body {
   margin-right: auto;
   width: 80%;
 }
+
 .image_splash {
   margin-left: auto;
   margin-right: auto;
@@ -323,7 +325,6 @@ body {
   margin-right: auto;
   color: #000;
   border: 2.67px solid #5fb523;
-  back
   font-size: larger;
 }
 
@@ -355,8 +356,7 @@ a {
   font-size: large;
 }
 
-@media screen and (max-width: 500px) {
-
+@media screen and (width <= 500px) {
   .categories_div {
   width: 99%;
   }
@@ -368,11 +368,13 @@ a {
   .container {
     width: 80%;
   }
+
   .category_name {
     text-align: left;
     margin-left: 0;
     padding-right: 0.5rem;
   }
+
   .link_categr {
     margin-left: 0;
     padding-right: 0.5rem;
@@ -400,6 +402,7 @@ a {
     margin-top:6rem;
     height: 75vh;
   }
+
   .signup_btn,
   .login_btn {
     margin-left: auto;
