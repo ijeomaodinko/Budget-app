@@ -82,14 +82,18 @@ body {
 }
 
 .link_category {
-  width: 16rem;
+  width: 100%;
   height: 2rem;
   background-color: rgb(95 167 235);
-  border-radius: 0.4rem;
   font-size: large;
   padding-top: 12px;
-  padding-left: 5rem;
   margin-right: 2rem;
+  text-align: center;
+}
+
+.link_category a {
+  color: #fff;
+
 }
 
 /* category */
@@ -175,7 +179,7 @@ body {
 .link {
   width: 100%;
   background-color: #5fb523;
-  height: 5rem;
+  height: 4rem;
   text-align: center;
   padding-top: 1.5rem;
 }
@@ -389,11 +393,10 @@ a {
   }
 
   .link_category {
-    width: auto;
+    width: 90%;
     margin-right: 0.5rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    border: 1px solid #000;
     color: #fff;
   }
 
@@ -406,6 +409,42 @@ a {
   .signup_btn,
   .login_btn {
     margin-left: auto;
+  }
+
+  .expense_container {
+    width: 90%;
+  }
+  .expense_div {
+    width: 90%;
+    font-size: 12px;
+  }
+  .expense_info {
+    gap: 0;
+    width: auto;
+  }
+  .text_expenseinfo {
+    width: 5rem;
+  }
+  
+  .time_expense {
+    width: 5rem;
+  }
+  
+  .time_infoexpense {
+    width: 2rem;
+  }
+  
+  .time_expens {
+    width: 5rem;
+  }
+  .text_h {
+    margin-left: 1rem;
+  }
+  .text_info {
+    padding-left: 9rem;
+  }
+  .category_info {
+    gap: 4rem;
   }
 
 } 
