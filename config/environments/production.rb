@@ -69,9 +69,9 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
       :address => "smtp.gmail.com",
       :port => 587,
-      :domain => 'https://budget-app-962l.onrender.com',
-      :user_name => 'budgetapp',
-      :password => 'budgetapp',
+      :domain => 'gmail.com',
+      :user_name => 'pureblog09@gmail',
+      :password => 'purity.1',
       :authentication => :plain,
       :enable_starttls_auto => true 
   } 

@@ -17,6 +17,13 @@ class Devise::RegistrationsController < DeviseController
         respond_with resource
       end
     end
+
+    protected
+
+  def after_sign_up_path_for(resource)
+    # Customize your redirect path here
+    root_path
+  end
   
     private
     def build_resource(sign_up_params)
