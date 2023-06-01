@@ -322,14 +322,21 @@ body {
 .splashe {
   display: flex;
   flex-direction: row;
-  border-radius: 2rem;
+  width: 40%;
   padding: 0.5rem;
   margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   color: #000;
-  border: 2.67px solid #5fb523;
+  border: 2.67px solid #rgb(95 167 235);
   font-size: larger;
+  text-align: center;
+  justify-content: center;
+  background-color:rgb(95 167 235);
+}
+
+.splashe a {
+  color: #fff;
 }
 
 a {
