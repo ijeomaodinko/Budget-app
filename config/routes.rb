@@ -12,7 +12,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "splashes#index"
-  resources :users
+  resources :users  do
+    member do
+      get :confirm_email
+    end
+  end
   resources :categories, only: [:index, :show, :new, :create] do
     resources :expenses, only: [:index, :show, :new, :create]
   end

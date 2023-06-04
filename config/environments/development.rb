@@ -17,7 +17,17 @@ Rails.application.configure do
   # Enable server timing
   config.server_timing = true
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 , protocol: 'http' }
-
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :address => "smtp.gmail.com",
+      :port => 587,
+      :domain => 'gmail.com',
+      :user_name => 'pureblog09',
+      :password => ENV['EMAIL_PASSWORD'],
+      :authentication => :plain,
+      :enable_starttls_auto => true 
+  } 
+  
   # Run rails dev:cache to toggle caching.
   if Rails.root.join("tmp/caching-dev.txt").exist?
     config.action_controller.perform_caching = true
