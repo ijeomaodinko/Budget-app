@@ -33,10 +33,7 @@ body {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 1rem;
-  border-right: #fcfdfd;
-  border-left: #fcfdfd;
-  border-top: #a5a7a7;
-  border-bottom: #3b3d3d;
+  border: 1px solid #a5a7a7;
 }
 
 .btn {
@@ -118,7 +115,7 @@ body {
   font-size: 2rem;
   text-align: center;
   color: rgb(245 247 250);
-  padding-left: 15rem;
+  padding-left: 17.9rem;
 }
 
 .category_name {
@@ -127,6 +124,13 @@ body {
   margin-top: 9rem;
   color: rgb(245 247 250);
   padding-right: 0.5rem;
+}
+
+.categoryi {
+  display: inline-block;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
 }
 
 .link_categr {
@@ -178,7 +182,7 @@ body {
 
 .link {
   width: 100%;
-  background-color: #5fb523;
+  background-color: #54e064;
   height: 4rem;
   text-align: center;
   padding-top: 1.5rem;
@@ -267,7 +271,7 @@ body {
 .text_info {
   text-align: right;
   font-size: large;
-  padding-left: 23.2rem;
+  margin-left: 29.2rem;
 }
 
 .text_h {
@@ -286,7 +290,7 @@ body {
 
 .text_splash {
   font-size: xx-large;
-  color: #5fb523;
+  color: #54e064;
   text-align: center;
 }
 
@@ -341,6 +345,9 @@ body {
 
 a {
   text-decoration: none;
+  color: #4372c3;
+  font-size: large;
+  font-weight: bold;
 }
 
 .link_splash {
@@ -359,12 +366,16 @@ a {
 .signup_btn,
 .login_btn {
   padding: 0.5rem;
-  border-radius: 1rem;
-  border: 2.67px solid #fff;
-  margin-left: 45%;
   margin-bottom: 1rem;
-  background-color: #5fb523;
-  font-size: large;
+  margin-top: 1rem;
+  height: 2.67rem;
+  background-color: #54e064;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  border: none;
+  color: #fff;
+  width: 100%;
 }
 
 @media screen and (width <= 500px) {
